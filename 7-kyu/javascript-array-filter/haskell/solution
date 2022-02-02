@@ -1,0 +1,3 @@
+module Even where
+getEvenNumbers :: [Int] -> [Int]
+getEvenNumbers a = filter even a

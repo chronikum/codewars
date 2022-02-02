@@ -1,0 +1,9 @@
+module FromToStepGenerator where
+
+generator  :: Integer -> Integer -> Integer -> [Integer]
+generator start stop 0 = []
+generator start stop step = 
+  if (start < stop) then
+    [start, (start + step)..stop]
+  else
+    [start, (start - step)..stop]
